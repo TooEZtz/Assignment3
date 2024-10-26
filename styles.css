@@ -30,6 +30,9 @@ header{
   gap: 100px;
 }
 
+.header p{
+  font-size: 15px;
+}
 .logo{
   position: relative;
   width: 100px;
