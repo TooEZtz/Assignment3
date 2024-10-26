@@ -1,0 +1,757 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+ 
+  
+}
+
+body{
+  
+}
+html{
+position: relative;
+background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%); ;
+height: 100vh;
+width: 100%;
+}
+
+header{
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  background-image: linear-gradient(135deg, rgba(245, 247, 250) 0%, rgba(195, 207, 226));
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 100px;
+}
+
+.logo{
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.logo img{
+  width: 100%;
+  height: 100%;
+}
+.companyName{
+  font-family: "Barrio", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.quotes{
+  font:400 30px cursive;
+}
+
+section{
+  overflow-x: hidden;
+  margin-bottom: 100px;
+  width: 100%;
+  z-index: 1;
+}
+.hero{
+  z-index: 1;
+  position: relative;
+  margin-top: 0px;
+  width: 100%;
+  height: 100vh;
+}
+.hero h1{
+  font-family:'Courier New', Courier, monospace;
+  font-size: 30px;
+  
+}
+
+.text{
+  border-radius: 15px;
+  background-color: rgba(46, 48, 48, 0.596);
+  padding: 1%;
+  color: #FEFEFE;
+  animation: float 5s infinite alternate-reverse ease-in-out;
+}
+.text:hover{
+  cursor: pointer;
+  background-color: rgba(5, 5, 5, 0.307);
+  
+}
+
+.hero img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+.hero .inner-container{
+  left: 0;
+  top: 0;
+  padding: 2%;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item1-info{
+  background-color: rgba(240, 255, 255,0.2);
+  color: #A55C77;
+ list-style: none;
+ text-align: justify;
+ font-weight: 800;
+ font-style: italic;
+ border-radius: 15px;
+ padding: 2%;
+}
+
+.item1-info:hover{
+  cursor: pointer;
+  background-color: rgba(5, 5, 5, 0.307);
+}
+
+
+footer{
+  background-image: linear-gradient(225deg, rgb(245, 247, 250) 0%, rgb(195, 207, 226) 100%);
+  z-index: 2;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  padding-top: 25px;
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  font-family: cursive;
+  font-weight: 600;
+  font-size: 15px;
+}
+ a{
+  padding:0.5% 1%;
+  border-radius: 15px;
+}
+a:hover{
+  background-color: rgba(240, 248, 255,0.5);
+}
+
+
+
+.testimonials {
+  background-image: url(sec2.jpg);
+  background-size: cover;
+  padding: 2%;
+  text-align: center;
+}
+
+.testimonials h2 {
+  background-color: #cfd9df;
+  border-radius: 15px;
+  padding: 1%;
+  text-align: center;
+  font-family: cursive;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.testimonial-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+.testimonial:hover{
+  border-bottom: 2px solid black;
+
+}
+
+.testimonial{
+  background-color:white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 60%;
+
+ 
+}
+
+.testimonial p {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.testimonial h4 {
+  font-weight: 600;
+  color: #333;
+}
+
+
+.services {
+  background-image: url(sec3.jpg);
+  background-size:cover;
+  padding: 40px 20px;
+  text-align: center;
+  height: 600px;
+}
+
+.services h2 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.service-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 15px;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  height: 300px;
+  
+}
+
+
+.service h3 {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  padding: 1%;
+  color: white;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.service p {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  color: white;
+  font-size: 1em;
+  padding: 1%;
+
+}
+
+.rent{
+  background-image: url(rent.jpg);
+  background-size: cover;
+}
+
+.workshop{
+  background-image: url(workshop.jpg);
+  background-size: cover;
+}
+
+.gear{
+  background-image: url(gear.jpg);
+  background-size: cover;
+}
+.repair{
+  background-image: url(repair.jpg);
+  background-size: cover;
+}
+
+
+/***************************************************************about.html*******************************************************************/
+.about {
+margin-top: 100px;
+ background-image: url(bag2.jpg);
+ background-size: cover;
+  padding: 5%;
+  text-align: center;
+}
+
+.about h2 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #cfd9df;
+}
+
+.about p {
+  font-size: 1.1em;
+  color:white;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.gallery {
+   padding: 0 50px; 
+  text-align: center;
+}
+
+.gallery h2 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 15px;
+}
+
+.gallery-container img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+img:hover{
+  transform: scale(1.05);
+}
+
+.team {
+  background-color: rgba(240, 248, 255, 0.9);
+  padding: 40px 50px;
+  text-align: center;
+}
+
+.team h2 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.team-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.team-member {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 25%;
+  height: 250px;
+  text-align: center;
+  border: 1px solid black;
+  background-color: #53060639;
+}
+
+.team-member img {
+  flex: 2;
+  width: 100%;
+  border-radius: 15px;
+  max-width: 300px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+
+
+/**************************************************products*****************************************************/
+.products {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap:20px;
+}
+
+.sidebar {
+  flex: 1;
+  padding: 20px;
+  background-color: rgba(240, 248, 255, 0.9);
+  border-radius: 10px;
+}
+
+.sidebar h2 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 10px 0;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.product-list {
+  scroll-behavior: hidden;
+  flex: 6;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.product img {
+  height: 600px;
+  object-fit: cover;
+ 
+  width: 100%;
+  border-radius: 10px;
+}
+
+.product h3 {
+  
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.product p {
+ 
+  font-size: 0.9em;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.product button {
+  
+  padding: 10px 15px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product button:hover {
+  background-color: #0056b3;
+}
+
+/***************************************contact us*************************************************************************************/
+.main{
+  margin-top: 150px;
+  margin-bottom: 150px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-image: url(camera1.jpg);
+  background-size: cover;
+  gap: 20px;
+  color: white;
+}
+  
+
+
+.contact-form-section, .map-section, .contact-details {
+  width: 90%;
+  padding:2% 5%;
+  border-radius: 8px;
+  background-color: #000000a3;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.contact-form {
+  
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 5px;
+}
+
+.contact-form input, 
+.contact-form textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+.map-section iframe {
+  width: 100%;
+  border: 0;
+}
+
+.contact-details p {
+  margin: 5px 0;
+}
+
+
+/******************************************************************************************************************/
+
+@keyframes float {
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(20px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+  
+
+
+
+}@media (max-width: 768px){
+  header{
+    gap: 10px;
+    height: 50px;
+    width: 100%;
+  }
+  .logo{
+    width: 100px;
+    height: 50px;
+  }
+
+   .companyName{
+    font-size: 10px;
+  }
+  .quotes{
+    height: 50px;
+    font-size: 10px;
+  }
+  
+  section{
+    position: relative;
+    width: 100%;
+ 
+  }
+  .hero img{
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero .inner-container{
+    margin-top: 50px;
+    gap: 200px;
+    padding: 8%;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: flex-start;
+  }
+  .item1-info{
+    background-color: rgba(0, 0, 0, 0.316);
+    color: white;
+  }
+
+  .service-container{
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+    align-items: flex-start;
+    width: 100%;
+    height: 500px;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+
+  .service{
+    width: 100px;
+    height: 100px;
+  }
+
+  .services h3{
+    width: 200px;
+    font-size: 10px;
+    text-align: center;
+    transform: translateX(100px);
+  }
+
+  .services p{
+    transform: translateX(100px);
+    width: 200px;
+    padding: 1%;
+    font-size: 10px;
+  }
+ 
+
+  .text{
+    padding: 0.5%;
+    font-size: 5px;
+   
+  }
+
+  footer{
+    margin-top: 50px;
+    background-color: #e2ebf0;
+    height: 40px;
+    width: 100%;
+    z-index: 2;
+    padding: 1%;
+    }
+
+  .navbar{
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .products{
+    z-index: 1;
+    margin-top:50px;
+    height: 100%;
+  }
+.sidebar{
+  position: fixed;
+  top: 50px;
+  left: 0;
+  
+  overflow-y: hidden;
+  
+}
+  .product-list{
+    margin-left: 150px;
+    margin-right: 15px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+  }
+
+    .product-list img{
+      height: 75px;
+      width: 150px;
+    }
+
+  .product h3, .product p, .product button{
+    transform: translateY(15px);
+    align-self: center;
+  }
+
+  .main{
+    margin-top:50px;
+    margin-bottom:50px;
+    
+  }
+}
+@media (max-width: 320px) { 
+  
+  body {
+      font-size: 14px; 
+  }
+
+  header {
+      height: 50px; 
+      flex-direction: column; 
+  }
+  .navbar {
+      flex-direction: column; 
+      gap: 10px; 
+  }
+  .hero .inner-container{
+    margin-top: 50px;
+    gap: 200px;
+    padding: 8%;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: flex-start;
+  }
+  .item1-info{
+    background-color: rgba(0, 0, 0, 0.316);
+    color: white;
+  }
+  .contact-form input, 
+  .contact-form textarea {
+      font-size: 12px; 
+  }
+
+  .product img {
+      height: 150px; 
+  }
+}
+@media (max-width: 1024px) { 
+  .hero .inner-container{
+    margin-top: 50px;
+    gap: 200px;
+    padding: 8%;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: flex-start;
+  }
+  .quotes{
+    height: 50px;
+    font-size: 10px;
+  }
+  .item1-info{
+    background-color: rgba(0, 0, 0, 0.316);
+    color: white;
+  }
+  .services {
+      padding: 40px;
+  } 
+  .team-container {
+      flex-direction: row; 
+  }
+  .product-list {
+      grid-template-columns: repeat(3, 1fr); 
+  }
+}
+@media (min-width: 1025px) { 
+  
+  body {
+      font-size: 16px; 
+  }
+
+  .navbar {
+      gap: 20px; 
+  }
+
+}
