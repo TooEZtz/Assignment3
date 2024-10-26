@@ -24,7 +24,7 @@ header{
   top: 0;
   background-image: linear-gradient(135deg, rgba(245, 247, 250) 0%, rgba(195, 207, 226));
   width: 100%;
-  height: 100px;
+  height: 50px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
